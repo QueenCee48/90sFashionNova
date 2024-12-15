@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-family: 'Impact';
+    font-size: 50px;
+    color: white;
+    background-color: rgb(219, 124, 156);
+    padding: 5px 20px;
+    height: 80px;
+    margin: 15px 0 20px 0;
+    outline: outset;
+    outline-width: 5px;
+    outline-color: rgb(229, 90, 157);
+}
+
+#left-span {
+    font-weight: 100;
+    font-style: italic;
+    font-stretch: condensed;
+    font-size: 60px;
+    position: absolute;
+}
+
+#center-span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#center-span img {
+    height: 70px;
+}
+
+body {
+    background-image: url("https://thumbs.dreamstime.com/b/leopard-print-repeat-pattern-vector-file-colours-high-quality-illustration-145861692.jpg");
+    background-size: 150px;
+    background-repeat: repeat;
+}
+
+#scanlines-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 20%;
+}
+
+#scanlines-container img {
+    width: 100vw;
+}
+
+#wardrobe-container {
+    width: 100vw;
+    padding: 0 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#top-container, #bottom-container {
+    background-color: rgb(255, 192, 203);
+    width: 350px;
+    height: 300px;
+    display: block;
+    outline: outset;
+    outline-width: 5px;
+    margin-bottom: 7px;
+    outline-color: rgb(229, 90, 157);
+}
+
+.wardrobe-buttons {
+    display: flex; 
+    justify-content: center; 
+    gap: 0; 
+}
+
+button {
+    width: 115px;
+    margin: 0 5px 7px 0;
+    padding: 10px;
+    background-color: rgb(219, 124, 156);
+    outline: outset;
+    outline-width: 3px;
+    outline-color: rgb(229, 90, 157);
+}
+
+button:hover {
+    background-color: rgb(240, 72, 128);
+}
+
+button:last-of-type {
+    margin-right: 0;
+}
+
+#browse-container button {
+    position: absolute;
+    top: 761.5px;
+    left: 470.5px;
+    font-family: 'Impact';
+    font-size: 25px;
+    color: white;
+    padding-top: 15.5px;
+    padding-bottom: 15.5px;
+}
+
+#dress-container button {
+    position: absolute;
+    top: 761.5px;
+    left: 950.5px;
+    font-family: 'Impact';
+    font-size: 25px;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.icon {
+    width: 20px;
+}
+
+#wardrobe-container img.reload {
+    padding: 0.25em;
+    display: block-inline;
+    position: relative;
+    top: 6px;
+    height: 0.9em;
+}
+
+.carousel {
+    max-width: 350px;
+}
+
+.carousel .carousel-inner {
+    position: relative;
+}
+
+.carousel .carousel-items.focus {
+    padding: 2px;
+}
+
+.carousel .carousel-item {
+    display: none;
+    max-width: 350px;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    top: -10px;
+    margin: auto;
+}
+
+.carousel .carousel-item.active {
+    display: block;
+}
+
+.carousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.carousel-item.active {
+    display: block;
+    opacity: 1;
+}
+
+footer {
+    display: flex;
+    margin: 800px 5px 20px 5px;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+footer a {
+    color: rgb(240, 104, 149);
+    margin-left: 4px;
+}
+
+footer a:hover {
+    color: rgb(223, 16, 85);
+}
+
+footer a:visited {
+    color:rgb(157, 24, 68)
+}

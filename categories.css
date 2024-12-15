@@ -1,0 +1,125 @@
+header {
+    background-color: pink;
+    top: 0;
+    margin-left: 190px;
+    margin-right: 1px;
+    height: 80px;
+    outline: outset;
+    outline-width: 5px;
+    outline-color: rgb(229, 90, 157);
+}
+
+#header-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-img-container img {
+    height: 80px;
+}
+
+#scanlines-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 20%;
+}
+
+#scanlines-container img {
+    width: 100vw;
+}
+
+body {
+    background-image: url("https://thumbs.dreamstime.com/b/leopard-print-repeat-pattern-vector-file-colours-high-quality-illustration-145861692.jpg");
+    background-size: 150px;
+    background-repeat: repeat;
+}
+
+#side-menu {
+    width: 150px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(255, 192, 203, 0.495);
+}
+
+#side-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(219, 124, 156);
+    color: white;
+    font-family: sans-serif;
+    outline: outset;
+    outline-width: 5px;
+    outline-color: rgb(229, 90, 157);
+}
+
+#side-menu a:last-of-type {
+    margin-bottom: 0;
+}
+
+#side-menu a:hover {
+    background-color: rgb(240, 72, 128);
+}
+
+#row-one {
+    margin-top: 20px;
+}
+
+#row-one img, #row-two img {
+    display: inline-block;
+    width: 320px;
+    background-color: white;
+    padding: 15px;
+    border: inset 5px;
+    border-color: pink;
+    outline: outset;
+    outline-width: 5px;
+    outline-color: rgb(229, 90, 157);
+    margin: 20px;
+    filter: contrast(80%);
+}
+
+#items-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 190px;
+    margin-right: 1px;
+}
+
+footer {
+    display: flex;
+    margin: 20px 1px 20px 190px;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+footer a {
+    color: rgb(240, 104, 149);
+    margin-left: 4px;
+}
+
+footer a:hover {
+    color: rgb(223, 16, 85);
+}
+
+footer a:visited {
+    color:rgb(157, 24, 68)
+}
